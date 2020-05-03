@@ -41,7 +41,7 @@ module.exports = {
             return resolve({});
           }
           results.groups = api.processResults(opts, results.groups);
-          return resolve(results.groups[0]);
+          return resolve(results.groups);
         });
       } catch (e) {
         /* istanbul ignore next */
